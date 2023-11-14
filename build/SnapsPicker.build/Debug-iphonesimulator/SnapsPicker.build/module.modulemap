@@ -1,0 +1,6 @@
+framework module SnapsPicker {
+  umbrella header "SnapsPicker.h"
+
+  export *
+  module * { export * }
+}
