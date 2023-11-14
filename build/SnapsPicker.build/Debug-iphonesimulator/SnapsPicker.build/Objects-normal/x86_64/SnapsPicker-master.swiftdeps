@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "2e1aa504b6c908ce0f499bcdaaed308e7fea270e1836e5eff2af45871ad5ba5d"
+build_start_time: [1699959622, 934989929]
+build_end_time: [1699959626, 308529853]
+inputs:
+  "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/SnapsPiker.swift": [1699951206, 437685251]

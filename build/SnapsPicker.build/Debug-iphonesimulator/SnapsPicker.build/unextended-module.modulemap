@@ -5,7 +5,6 @@ framework module SnapsPicker {
   module * { export * }
 }
 
-module SnapsPicker.Swift {
-  header "SnapsPicker-Swift.h"
-  requires objc
+module SnapsPicker.__Swift {
+  exclude header "SnapsPicker-Swift.h"
 }

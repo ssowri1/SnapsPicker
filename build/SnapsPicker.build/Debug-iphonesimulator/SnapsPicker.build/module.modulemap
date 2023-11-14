@@ -4,3 +4,8 @@ framework module SnapsPicker {
   export *
   module * { export * }
 }
+
+module SnapsPicker.Swift {
+  header "SnapsPicker-Swift.h"
+  requires objc
+}
