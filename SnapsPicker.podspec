@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SnapsPicker"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A framework to pick our snaps from phone gallery or camera"
 
   # This description is used to generate tags and improve search results.
