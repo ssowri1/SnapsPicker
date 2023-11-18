@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SnapsPicker'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'A framework to pick our snaps from phone gallery or camera'
   s.description      = <<-DESC
   A framework to pick our snaps from phone gallery or camera by capture
