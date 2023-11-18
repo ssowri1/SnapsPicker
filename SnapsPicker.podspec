@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.author           = { 'ssowri1' => 'ssowri1@gmail.com' }
   s.source           = { :git => 'https://github.com/ssowri1/SPPhotoViewer.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'SnapsPicker/SnapsPicker/**/*'
+  s.source_files = 'SnapsPicker/**/*'
   s.frameworks = 'UIKit'
 end
