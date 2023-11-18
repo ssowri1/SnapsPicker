@@ -24,7 +24,9 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "A framework to pick our snaps from phone gallery or camera by capture"
+  spec.description  = <<-DESC
+A framework to pick our snaps from phone gallery or camera by capture
+			DESC
 
   spec.homepage     = "https://github.com/ssowri1/SnapsPicker"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -37,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-   spec.license      = "MIT"
+  #  spec.license      = "MIT"
    spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
@@ -90,7 +92,7 @@ spec.swift_versions = "4.0"
   #
 
   spec.source_files  = "SnapsPicker", "SnapsPicker/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+#   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
