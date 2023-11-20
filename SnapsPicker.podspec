@@ -83,7 +83,7 @@ A framework to pick our snaps from phone gallery or camera by capture
   #
 
   spec.source       = { :git => "https://github.com/ssowri1/SnapsPicker.git", :tag => "#{spec.version}" }
-spec.swift_versions = "4.0"
+  spec.swift_versions = "5.4"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
