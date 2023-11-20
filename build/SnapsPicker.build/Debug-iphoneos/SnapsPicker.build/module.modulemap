@@ -1,0 +1,11 @@
+framework module SnapsPicker {
+  umbrella header "SnapsPicker.h"
+
+  export *
+  module * { export * }
+}
+
+module SnapsPicker.Swift {
+  header "SnapsPicker-Swift.h"
+  requires objc
+}

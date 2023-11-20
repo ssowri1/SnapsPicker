@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SnapsPicker"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "A framework to pick our snaps from phone gallery or camera"
 
   # This description is used to generate tags and improve search results.
@@ -53,7 +53,7 @@ A framework to pick our snaps from phone gallery or camera by capture
   #  profile URL.
   #
 
-  spec.author             = { "Sowrirajan" => "notitlebrandnew@gmail.com" }
+  spec.author             = { "Sowrirajan" => "ssowri1@gmail.com" }
   # Or just: spec.author    = "Sowrirajan"
   # spec.authors            = { "Sowrirajan" => "notitlebrandnew@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/ntbnapp"
@@ -65,7 +65,7 @@ A framework to pick our snaps from phone gallery or camera by capture
   #
 
    spec.platform     = :ios
-   spec.platform     = :ios, "11.0"
+   spec.platform     = :ios, "16.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"

@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RLK9KJ3YNUhooTNz34xK9gfWjFc=
+		mCp5OdlVLF8xSmeAZ3h4HgjA6fw=
 		</data>
 		<key>Modules/SnapsPicker.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		JyQLZ6wh7zcNw7ksMNB7hLQ43uA=
+		jbc0jZjnNd6cvu9GlhII+xqz3UU=
 		</data>
 		<key>Modules/SnapsPicker.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/SnapsPicker.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DDssRZ1DwANuiBg6wE+D7oZZCm4=
+		Ix1WbILuo+zUh2E84UiDozvFJPQ=
 		</data>
 		<key>Modules/SnapsPicker.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rCpYjYHn+GsJT8+mm5HCcKwTKws=
+		ces55zXhaSxKOVFTDMIGzFiFwG0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -57,7 +57,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+tenwUzXJEJQ0EM4Rbt0lOMXICDT2GqL4dJyudg+8ZU=
+			sOdgijFhE/c/XZSHmyL5DYa+fYw2gdlsZY6u/lmA0E8=
 			</data>
 		</dict>
 		<key>Modules/SnapsPicker.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lsGUv0sER4OgE7k9ygegUqMZHLX7cMoAQXqiF2W3B3I=
+			K6zHn7I94v/n6OK5ayb9Mr+8DiMG3R/JxHpYwk4kGYE=
 			</data>
 		</dict>
 		<key>Modules/SnapsPicker.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M4c2xn6ey7WzNEmDbafakqHg1XqUI/AIGzaNxMKfUXo=
+			m8OB+dtdWmijeZKwGXBkq1poyai/fLjaROTqYFc45Xc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

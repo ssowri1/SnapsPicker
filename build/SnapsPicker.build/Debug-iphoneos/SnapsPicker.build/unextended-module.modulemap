@@ -1,0 +1,10 @@
+framework module SnapsPicker {
+  umbrella header "SnapsPicker.h"
+
+  export *
+  module * { export * }
+}
+
+module SnapsPicker.__Swift {
+  exclude header "SnapsPicker-Swift.h"
+}
