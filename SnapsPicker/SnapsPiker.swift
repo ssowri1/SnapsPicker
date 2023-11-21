@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct SnapsPicker: UIViewControllerRepresentable {
+public struct SnapsPicker: UIViewControllerRepresentable {
     
     @Environment(\.presentationMode)
     private var presentationMode
@@ -17,7 +17,7 @@ struct SnapsPicker: UIViewControllerRepresentable {
     let sourceType: UIImagePickerController.SourceType
     let onImagePicked: (UIImage) -> Void
     
-    final class Coordinator: NSObject,
+    final public class Coordinator: NSObject,
                              UINavigationControllerDelegate,
                              UIImagePickerControllerDelegate {
         
@@ -27,39 +27,39 @@ struct SnapsPicker: UIViewControllerRepresentable {
         private let sourceType: UIImagePickerController.SourceType
         private let onImagePicked: (UIImage) -> Void
         
-        init(presentationMode: Binding<PresentationMode>,
-             sourceType: UIImagePickerController.SourceType,
+        public init(presentationMode: Binding<PresentationMode>,
+                    sourceType: UIImagePickerController.SourceType = .photoLibrary,
              onImagePicked: @escaping (UIImage) -> Void) {
             _presentationMode = presentationMode
             self.sourceType = sourceType
             self.onImagePicked = onImagePicked
         }
         
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             let image = info[.originalImage] as! UIImage
             onImagePicked(image)
             presentationMode.dismiss()
         }
         
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
             presentationMode.dismiss()
         }
     }
     
-    func makeCoordinator() -> Coordinator {
+    public func makeCoordinator() -> Coordinator {
         return Coordinator(presentationMode: presentationMode,
                            sourceType: sourceType,
                            onImagePicked: onImagePicked)
     }
     
-    func makeUIViewController(context: UIViewControllerRepresentableContext<SnapsPicker>) -> UIImagePickerController {
+    public func makeUIViewController(context: UIViewControllerRepresentableContext<SnapsPicker>) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.sourceType = sourceType
         picker.delegate = context.coordinator
         return picker
     }
     
-    func updateUIViewController(_ uiViewController: UIImagePickerController,
+    public func updateUIViewController(_ uiViewController: UIImagePickerController,
                                 context: UIViewControllerRepresentableContext<SnapsPicker>) {
         
     }
