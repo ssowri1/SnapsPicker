@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
+
 public struct SnapsPicker: UIViewControllerRepresentable {
     
     @Environment(\.presentationMode)
@@ -17,7 +18,12 @@ public struct SnapsPicker: UIViewControllerRepresentable {
     let sourceType: UIImagePickerController.SourceType
     let onImagePicked: (UIImage) -> Void
     
-    final public class Coordinator: NSObject,
+    public init(sourceType: UIImagePickerController.SourceType, onImagePicked: @escaping (UIImage) -> Void) {
+        self.sourceType = sourceType
+        self.onImagePicked = onImagePicked
+    }
+    
+    public class Coordinator: NSObject,
                              UINavigationControllerDelegate,
                              UIImagePickerControllerDelegate {
         
@@ -28,7 +34,7 @@ public struct SnapsPicker: UIViewControllerRepresentable {
         private let onImagePicked: (UIImage) -> Void
         
         public init(presentationMode: Binding<PresentationMode>,
-                    sourceType: UIImagePickerController.SourceType = .photoLibrary,
+             sourceType: UIImagePickerController.SourceType = .photoLibrary,
              onImagePicked: @escaping (UIImage) -> Void) {
             _presentationMode = presentationMode
             self.sourceType = sourceType
@@ -64,4 +70,3 @@ public struct SnapsPicker: UIViewControllerRepresentable {
         
     }
 }
-
