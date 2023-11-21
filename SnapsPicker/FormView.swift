@@ -13,7 +13,7 @@ public struct FormView: View {
     @State var email: String = ""
     @State var phoneNumber: String = ""
     @State var showImagePicker: Bool = false
-    @State var image: Image = Image(systemName: "photo.circle.fill")
+    @State var image: Image = Image(systemName: "userPlaceholder")
     @Environment(\.dismiss) var dismiss
     var onDismiss: ((_ model: FormData) -> Void)?
     @State var formData: FormData = FormData()
@@ -33,7 +33,7 @@ public struct FormView: View {
                         })
                         .cornerRadius(50)
                         .clipShape(Circle())
-                    Image(systemName: "pencil.circle.fill")
+                    Image(systemName: "userPlaceholder")
                         .position(x: 100, y: 100)
                         .frame(width: 150, height: 150)
                         .foregroundColor(.white)
