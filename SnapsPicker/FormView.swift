@@ -8,14 +8,13 @@
 import SwiftUI
 
 public struct FormView: View {
-    
+    //MARK: - PROPERTIES
     @State var name: String = ""
     @State var email: String = ""
     @State var phoneNumber: String = ""
     @State var showImagePicker: Bool = false
     @State var image: Image = Image("userPlaceholder")
     @Environment(\.dismiss) var dismiss
-    
     var onDismiss: ((_ model: FormData) -> Void)?
     @State var formData: FormData = FormData()
     

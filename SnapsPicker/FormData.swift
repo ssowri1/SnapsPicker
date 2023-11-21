@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//MARK: - FORM DATA MODEL
 public struct FormData {
     public var name: String = ""
     public var email: String = ""
