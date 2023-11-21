@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
 options: "37fddba87cd82ae6199bfc3a3981d680d251c012c87f664ccede6111e41938cf"
-build_start_time: [1700565524, 901777982]
-build_end_time: [1700565527, 536134958]
+build_start_time: [1700569176, 908607006]
+build_end_time: [1700569178, 301742076]
 inputs:
-  "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/Module/Coordinator/Coordinator.swift": [1700565524, 559848308]
-  "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/Module/SnapsPicker/SnapPicker+extension.swift": [1700565524, 575279712]
-  "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/Module/SnapsPicker/SnapsPiker.swift": [1700565524, 52318572]
+  "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/Coordinator.swift": [1700565558, 51197528]
+  "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/SnapPicker+extension.swift": [1700565524, 575279712]
+  "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/SnapsPiker.swift": [1700565524, 52318572]
