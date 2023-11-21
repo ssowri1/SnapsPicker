@@ -13,7 +13,7 @@ public struct FormView: View {
     @State var email: String = ""
     @State var phoneNumber: String = ""
     @State var showImagePicker: Bool = false
-    @State var image: Image = Image("userPlaceholder")
+    @State var image: Image = Image(systemName: "photo.circle.fill")
     @Environment(\.dismiss) var dismiss
     var onDismiss: ((_ model: FormData) -> Void)?
     @State var formData: FormData = FormData()
@@ -27,16 +27,17 @@ public struct FormView: View {
             HStack {
                 Spacer()
                 ZStack {
-                    Circle()
-                        .foregroundColor(.teal)
-                        .padding()
-                        .frame(width: 164, height: 164)
-                    
                     image.resizable().frame(width: 100, height: 100)
                         .onTapGesture(perform: {
                             self.showImagePicker.toggle()
                         })
                         .cornerRadius(50)
+                        .clipShape(Circle())
+                    Image(systemName: "pencil.circle.fill")
+                        .position(x: 100, y: 100)
+                        .frame(width: 150, height: 150)
+                        .foregroundColor(.white)
+
                 }
                 Spacer()
             }
@@ -46,18 +47,26 @@ public struct FormView: View {
                 }
             }
             
-            Section("User Information") {
-                TextField("Name", text: $name)
-                TextField("Email", text: $email)
-                TextField("Phone number", text: $phoneNumber)
+            Section(AppConstants.userInformation) {
+                TextField(AppConstants.name, text: $name)
+                TextField(AppConstants.email, text: $email)
+                TextField(AppConstants.phoneNumber, text: $phoneNumber)
             }
-            Button("X") {
-                self.formData = FormData(name: name, email: email, phone: phoneNumber, image: image)
-                onDismiss?(formData)
-                dismiss()
+            HStack {
+                Spacer()
+                Button(AppConstants.done) {
+                    self.formData = FormData(name: name, email: email, phone: phoneNumber, image: image)
+                    onDismiss?(formData)
+                    dismiss()
+                }
+                .frame(width: 180)
+                .bold()
+                .padding(20)
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(12)
+                Spacer()
             }
         }
-        .navigationTitle("User Profile")
     }
 }
-

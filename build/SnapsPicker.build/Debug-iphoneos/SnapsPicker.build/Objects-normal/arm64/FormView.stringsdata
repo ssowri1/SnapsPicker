@@ -1,32 +1,5 @@
 {
   "source": "/Users/sowrirajans/Documents/Preliminaries/CocoaPods/SnapsPicker/SnapsPicker/FormView.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "User Profile"
-      },
-      {
-        "comment": "",
-        "key": "User Information"
-      },
-      {
-        "comment": "",
-        "key": "X"
-      },
-      {
-        "comment": "",
-        "key": "Name"
-      },
-      {
-        "comment": "",
-        "key": "Email"
-      },
-      {
-        "comment": "",
-        "key": "Phone number"
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }
