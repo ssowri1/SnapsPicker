@@ -25,13 +25,12 @@ Open your module  where you have to make the Image picker configuration and past
             showForm = true
         }
         .sheet(isPresented: $showForm) {
-            FormView(onDismiss: it, formData: formData)
+            FormView(onDismiss: information, formData: formData)
         }
     }
     
-    func it(play: FormData) {
-        print (play.name)
-        print ("back")
+    func information(data: FormData) {
+        // You can append the form data to appropriate UI.
       }
     }
     
@@ -80,12 +79,12 @@ Open your module  where you have to make the Image picker configuration and past
         }
     }
     
-    func information(play: FormData) {
-        selectedImage = play.image
+    func information(data: FormData) {
+        selectedImage = data.image
             .resizable()
-        name = Text(play.name)
-        email = Text("✉️ " + play.email)
-        phone = Text("📱 " + play.phone)
+        name = Text(data.name)
+        email = Text("✉️ " + data.email)
+        phone = Text("📱 " + data.phone)
         }
     }
 
