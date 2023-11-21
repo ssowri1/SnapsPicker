@@ -39,7 +39,7 @@ Awesome! You're done ultimately. any make fun with your application 🐶.
 
 ## License
 
-This project is licensed under the MIT 2.0
+This project is licensed under the MIT.
 
 ## Support or Contact
 
