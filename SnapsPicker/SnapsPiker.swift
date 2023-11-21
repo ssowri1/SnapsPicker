@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 import SwiftUI
 
-
 public struct SnapsPicker: UIViewControllerRepresentable {
     
     @Environment(\.presentationMode)
@@ -21,35 +20,6 @@ public struct SnapsPicker: UIViewControllerRepresentable {
     public init(sourceType: UIImagePickerController.SourceType, onImagePicked: @escaping (UIImage) -> Void) {
         self.sourceType = sourceType
         self.onImagePicked = onImagePicked
-    }
-    
-    public class Coordinator: NSObject,
-                             UINavigationControllerDelegate,
-                             UIImagePickerControllerDelegate {
-        
-        
-        @Binding
-        private var presentationMode: PresentationMode
-        private let sourceType: UIImagePickerController.SourceType
-        private let onImagePicked: (UIImage) -> Void
-        
-        public init(presentationMode: Binding<PresentationMode>,
-             sourceType: UIImagePickerController.SourceType = .photoLibrary,
-             onImagePicked: @escaping (UIImage) -> Void) {
-            _presentationMode = presentationMode
-            self.sourceType = sourceType
-            self.onImagePicked = onImagePicked
-        }
-        
-        public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            let image = info[.originalImage] as! UIImage
-            onImagePicked(image)
-            presentationMode.dismiss()
-        }
-        
-        public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            presentationMode.dismiss()
-        }
     }
     
     public func makeCoordinator() -> Coordinator {
@@ -67,6 +37,32 @@ public struct SnapsPicker: UIViewControllerRepresentable {
     
     public func updateUIViewController(_ uiViewController: UIImagePickerController,
                                 context: UIViewControllerRepresentableContext<SnapsPicker>) {
-        
+    }
+}
+
+public class Coordinator: NSObject,
+                         UINavigationControllerDelegate,
+                         UIImagePickerControllerDelegate {
+    @Binding
+    private var presentationMode: PresentationMode
+    private let sourceType: UIImagePickerController.SourceType
+    private let onImagePicked: (UIImage) -> Void
+    
+    public init(presentationMode: Binding<PresentationMode>,
+         sourceType: UIImagePickerController.SourceType = .photoLibrary,
+         onImagePicked: @escaping (UIImage) -> Void) {
+        _presentationMode = presentationMode
+        self.sourceType = sourceType
+        self.onImagePicked = onImagePicked
+    }
+    
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.originalImage] as! UIImage
+        onImagePicked(image)
+        presentationMode.dismiss()
+    }
+    
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        presentationMode.dismiss()
     }
 }
